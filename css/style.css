@@ -872,6 +872,7 @@ input[type="submit"] {
 
 .widget-search input[type="search"],
 #contact-form input[type="text"],
+input[type="email"],
 #contact-form textarea,
 #respond input[type="text"],
 #respond textarea {

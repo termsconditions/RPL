@@ -50,7 +50,7 @@
                                 
                                 data-speed="300"
                                 data-start="2500"
-                                data-easing="easeOutExpo"><a href="#" class="tp-caption btn-system btn-large border-btn btn-gray">Daftar Sekarang!</a>
+                                data-easing="easeOutExpo"><a href="?nav=daftar" class="tp-caption btn-system btn-large border-btn btn-gray">Daftar Sekarang!</a>
                             </div>
                             
                             <!-- LAYER NR. 5 -->
@@ -68,7 +68,7 @@
                         <!-- SLIDE 2  -->
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="300" >
                             <!-- MAIN IMAGE -->
-                            <img src="images/slide-03-bg.jpg" data-fullwidthcentering="on" alt="slidebg2"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <img src="images/putih.png" data-fullwidthcentering="on" alt="slidebg2"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                             
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfl start"
@@ -77,7 +77,7 @@
                                 
                                 data-speed="300"
                                 data-start="1600"
-                                data-easing="easeInOutExpo">Fully Responsive & Retina Ready
+                                data-easing="easeInOutExpo">Requirements
                             </div>
                             
                             <!-- LAYER NR. 2 -->
@@ -87,7 +87,7 @@
                                 
                                 data-speed="300"
                                 data-start="1900"
-                                data-easing="easeInOutExpo">Built Twitter Bootstrap 3
+                                data-easing="easeInOutExpo">Design
                             </div>
                             
                             <!-- LAYER NR. 3 -->
@@ -97,7 +97,7 @@
                                 
                                 data-speed="300"
                                 data-start="2200"
-                                data-easing="easeInOutExpo">Tons of Shortcodes
+                                data-easing="easeInOutExpo">Development
                             </div>
                             
                             <!-- LAYER NR. 4 -->
@@ -107,7 +107,7 @@
                                 
                                 data-speed="300"
                                 data-start="2500"
-                                data-easing="easeInOutExpo">Touchable Sliders
+                                data-easing="easeInOutExpo">Testing
                             </div>
                             
                             <!-- LAYER NR. 5 -->
@@ -117,18 +117,18 @@
                                 
                                 data-speed="300"
                                 data-start="2800"
-                                data-easing="easeInOutExpo">Wide and Boxed Layout
+                                data-easing="easeInOutExpo">Deployment
                             </div>
                             
                             <!-- LAYER NR. 6 -->
-                            <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfr start"
+                            <!--div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfr start"
                                 data-x="left"
                                 data-y="310"
                                 
                                 data-speed="300"
                                 data-start="3100"
                                 data-easing="easeInOutExpo">Built With HTML5 and CSS3
-                            </div>
+                            </div-->
                             
                             <!-- LAYER NR. 7 -->
                             <div class="tp-caption sfr start"
@@ -139,7 +139,7 @@
                                 data-speed="600"
                                 data-start="1000"
                                 data-easing="easeOutBack"
-                                style="z-index: 2"><img src="images/slide-03-image-01.png" alt="" />
+                                style="z-index: 2"><img src="images/haha.png" alt="" />
                             </div>
                             
                             <!-- LAYER NR. 8 -->
@@ -159,7 +159,7 @@
                         <!-- SLIDE 3  -->
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="300" >
                             <!-- MAIN IMAGE -->
-                            <img src="http://placehold.it/1920x500/f4f4f4/ddd" data-fullwidthcentering="on" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <img src="images/putih.png" data-fullwidthcentering="on" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                             
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start"

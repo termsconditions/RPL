@@ -6,7 +6,7 @@
 <head>
   
     <!-- Basic -->
-	<title>RPL | Home</title>
+	<title>Software Engineering Laboratory Telkom University</title>
     
     <!-- Define Charset -->
 	<meta charset="utf-8">
@@ -119,7 +119,7 @@
 							<i class="icon-menu-1"></i>
 						</button>
                         <!-- End Toggle Nav Link For Mobiles -->
-						<a class="navbar-brand" href="?nav=home"><img alt="" src="images/loglog2.png" ></a>
+						<a class="navbar-brand" href="?nav=home"><img alt="" src="images/venda.png" ></a>
 					</div>
 					<div  class="navbar-collapse collapse">
                         <!-- Start Navigation List -->
@@ -136,6 +136,9 @@
 							<li><a href="?nav=contact">Contact</a></li>
                             <li>
                                 <a href="?nav=alumni">Alumni</a>
+                            </li>
+                             <li>
+                                <a href="?nav=daftar">Daftar</a>
                             </li>
 						</ul>
                         <!-- End Navigation List -->
@@ -176,6 +179,12 @@
                  case 'portdetail':
                    include  "portdetail.php";
                     break;  
+                 case 'daftar':
+                   include  "formDaftar.php";
+                    break;
+                 case 'pendaftar':
+                   include  "listPendaftar.php";
+                    break;
                 default:
                    include  "404.php";
                     break;
