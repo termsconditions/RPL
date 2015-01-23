@@ -402,191 +402,79 @@
                 <!-- Start Recent Projects Carousel -->
                 <div class="recent-projects">
                     <div class="projects-carousel touch-carousel navigation-3">
-                    
-                        <!-- Start Project Item -->
-                    	<div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                   
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
+                        <?php
+                            include 'dbcon.php';
+                            $qrPorts = "SELECT 
+                                        id_port,
+                                        judul
+                                        FROM portfolio
+                                        ORDER BY  date_status DESC
+                                        LIMIT 0,8
+                                        "; 
+                            $getPorts = mysql_query($qrPorts);
+                            $katss = array();
+                            while($resultPorts=mysql_fetch_assoc($getPorts)) {
+                                $qrKat = "SELECT
+                                            k.nama_kategori
+                                            FROM port_have_kat h, kategori k
+                                            WHERE h.fk_id_port = ".$resultPorts['id_port']." AND k.id_kategori = h.fk_id_kat
+                                            ";
+                                $getKat = mysql_query($qrKat);
+                                while($resultKat=mysql_fetch_assoc($getKat)) {
+                                     $katss[] = $resultKat['nama_kategori'];
+                                }
+                                $qrFoto ="SELECT
+                                            file
+                                            from foto
+                                            where id_port_foto = ".$resultPorts['id_port']."
+                                            ORDER BY  id_foto DESC
+                                            LIMIT 0,1
+                                        ";
+                                   //     echo $qrFoto;exit();
+                                $getFoto = mysql_query($qrFoto);
+                                $resultFoto = mysql_fetch_array($getFoto);
+                                if (!empty($resultFoto)) { 
+                                    $foto =  "images/foto/".$resultFoto['file'];
+                                }
+                                else
+                                {
+                                    $foto =  "http://placehold.it/550x400/444";
+                                }
+                                ?>
                                     
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                   
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                  
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                  
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                    
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                   
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                        	<div class="portfolio-border">
-                                <div class="portfolio-thumb">
-                                    <a href="?nav=portdetail&title=a">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="http://placehold.it/550x400/444" />
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="?nav=portdetail&title=a">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                    
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                    	</div>
-                        <!-- End Project Item -->
-                        
+                                     <!-- Start Project Item -->
+                                        <div class="portfolio-item item">
+                                            <div class="portfolio-border">
+                                                <div class="portfolio-thumb">
+                                                    <a href="?nav=portdetail&title=<?php echo $resultPorts['judul']?>">
+                                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
+                                                        <img alt="" src="<?php echo $foto;?>" />
+                                                    </a>
+                                                </div>
+                                                <!-- End Project Thumb -->
+                                                <!-- Start Project Details -->
+                                                <div class="portfolio-details">
+                                                    <a href="?nav=portdetail&title=<?php echo $resultPorts['judul']?>">
+                                                        <h4><?php echo $resultPorts['judul']?></h4>
+                                                        <span><?php 
+                                                                echo $katss[0];
+                                                                for ($i=1; $i < count($katss) ; $i++) { 
+                                                                    echo ", ".$katss[$i];
+                                                                }
+                                                                unset($katss);
+                                                                $katss = array();
+                                                                ?></span>
+                                                    </a>
+                                                   
+                                                </div>
+                                                <!-- End Project Details -->
+                                            </div>
+                                        </div>
+                                        <!-- End Project Item -->
+                                <?php
+                            }
+                        ?>
+                       
                 	</div>
                 </div>
                 <!-- End Recent Projects Carousel -->

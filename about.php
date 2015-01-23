@@ -41,8 +41,9 @@
                             -->
                             <p>Laboratorium Rekayasa Perangkat Lunak merupakan Lab Riset di bawah kelompok kelimuan SIDE Fakultas Informatika, Universitas Telkom. 
                                 Riset Lab RPL berfokus pada proses pengembangan perangkat lunak yaitu Design, Development, dan Maintenance.</p>
-                            <p>Lab RPL memiliki sub-kelompok utama yang dibagi menjadi dua, yaitu Study Group dan Research Group. 
-                                Study Group berfokus pada kegiatan belajar, berdiskusi, berbagi, dan berkompetisi di bidang pengembangan perangkat lunak. Sedangkan Research Group berfokus pada kegiatan riset di bidang pengembangan perangkat lunak, umumnya dilakukan untuk penulisan Tugas Akhir (skripsi).
+                            <p>Lab RPL memiliki sub-kelompok utama yang dibagi menjadi tiga, yaitu Study Group, Research Group, dan Game Development Community. 
+                                Study Group berfokus pada kegiatan belajar, berdiskusi, berbagi, dan berkompetisi di bidang pengembangan perangkat lunak. Research Group berfokus pada kegiatan riset di bidang pengembangan perangkat lunak, umumnya dilakukan untuk penulisan Tugas Akhir (skripsi).
+                                Game Development Community (GDC) merupakan kelompok yang berfokus pada pengembangan game.
                             </p>
                         </div>
                       
@@ -104,7 +105,7 @@
                              <!-- Start Progress Bar 5 -->
                             <div class="progress-label">Deployment</div>
                             <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="100%" data-appear-animation-delay="1200">
+                                <div class="progress-bar progress-bar-primary" data-progress-animation="80%" data-appear-animation-delay="600">
                                 <span class="percentage">80%</span>
                               </div>
                             </div>
@@ -154,6 +155,24 @@
                                      </div>
                                  </div>
                                  <!-- End Accordion 2 -->
+
+                                  <!-- Start Accordion 3 -->
+                                <div class="panel panel-default">
+                                    <!-- Toggle Heading -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" class="collapsed">
+                                                <i class="icon-down-open-1 control-icon"></i>
+                                                <i class="icon-rocket"></i> Game Development Community
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!-- Toggle Content -->
+                                    <div id="collapse-3" class="panel-collapse collapse">
+                                         <div class="panel-body"><img class="img-thumbnail image-text" style="float:left; width:150px;" alt="" src="http://placehold.it/150x100/333/666" /> <strong class="accent-color">Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown <strong>printer</strong> took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                                     </div>
+                                 </div>
+                                 <!-- End Accordion 3 -->
                               
                             </div>
                         </div>
